@@ -1,0 +1,85 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id               String   @id @default(cuid())
+  email            String   @unique
+  name             String?
+  role             String   @default("user")
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  subscription     Subscription?
+  chats            Chat[]
+  invoices         Invoice[]
+  attachments      Attachment[]
+}
+
+model Subscription {
+  id               String   @id @default(cuid())
+  userId           String   @unique
+  status           String   // active | trialing | past_due | locked | canceled | unpaid
+  currentPeriodEnd DateTime?
+  graceUntil       DateTime?
+  planId           String?
+  lastPaymentRef   String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  invoices         Invoice[]
+}
+
+model Invoice {
+  id        String   @id @default(cuid())
+  userId    String
+  amountIrr Int
+  planId    String
+  authority String?
+  refId     String?
+  status    String   // pending | paid | failed
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subscription Subscription? @relation(fields: [userId], references: [userId])
+}
+
+model Chat {
+  id        String   @id @default(cuid())
+  userId    String
+  title     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages  Message[]
+  files     Attachment[]
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  chatId    String
+  role      String   // user | assistant | system
+  content   String
+  createdAt DateTime @default(now())
+  chat      Chat     @relation(fields: [chatId], references: [id], onDelete: Cascade)
+}
+
+model Attachment {
+  id        String   @id @default(cuid())
+  chatId    String
+  userId    String
+  name      String
+  mime      String
+  size      Int
+  s3Key     String
+  createdAt DateTime @default(now())
+  chat      Chat     @relation(fields: [chatId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

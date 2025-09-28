@@ -1,0 +1,39 @@
+{
+  "name": "@workspace/mobile",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "dev": "expo start",
+    "build": "expo build",
+    "ios": "expo start --ios",
+    "android": "expo start --android",
+    "web": "expo start --web",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "expo": "~49.0.15",
+    "expo-router": "~2.0.0",
+    "expo-status-bar": "~1.6.0",
+    "expo-web-browser": "~12.3.2",
+    "expo-linking": "~5.0.2",
+    "expo-updates": "~0.20.10",
+    "expo-font": "~11.4.0",
+    "expo-secure-store": "~12.3.1",
+    "react": "18.2.0",
+    "react-native": "0.72.6",
+    "react-native-safe-area-context": "4.6.3",
+    "react-native-screens": "~3.22.0",
+    "react-native-vector-icons": "^10.0.2",
+    "dayjs": "^1.11.10",
+    "@workspace/ui": "workspace:*",
+    "@workspace/i18n": "workspace:*",
+    "@workspace/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~18.2.14",
+    "@types/react-native": "~0.72.2",
+    "typescript": "^5.1.3"
+  }
+}

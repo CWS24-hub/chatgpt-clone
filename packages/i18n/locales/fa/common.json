@@ -1,0 +1,38 @@
+{
+  "app": {
+    "name": "کلون چت‌جی‌پی‌تی",
+    "description": "برنامه چت هوش مصنوعی"
+  },
+  "navigation": {
+    "home": "خانه",
+    "chat": "چت",
+    "settings": "تنظیمات",
+    "billing": "صورت‌حساب"
+  },
+  "buttons": {
+    "save": "ذخیره",
+    "cancel": "لغو",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "submit": "ارسال",
+    "back": "بازگشت",
+    "next": "بعدی",
+    "previous": "قبلی",
+    "close": "بستن",
+    "open": "باز کردن",
+    "loading": "در حال بارگذاری..."
+  },
+  "status": {
+    "active": "فعال",
+    "inactive": "غیرفعال",
+    "pending": "در انتظار",
+    "success": "موفق",
+    "error": "خطا",
+    "warning": "هشدار"
+  },
+  "language": {
+    "english": "انگلیسی",
+    "persian": "فارسی",
+    "arabic": "عربی"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "newChat": "New Chat",
+  "chatHistory": "Chat History",
+  "sendMessage": "Send a message",
+  "typeMessage": "Type your message here...",
+  "send": "Send",
+  "regenerate": "Regenerate",
+  "copy": "Copy",
+  "delete": "Delete",
+  "edit": "Edit",
+  "share": "Share",
+  "export": "Export",
+  "search": "Search conversations",
+  "noChats": "No conversations yet",
+  "startNewChat": "Start a new conversation",
+  "uploadFile": "Upload File",
+  "attachFile": "Attach File",
+  "fileUploaded": "File uploaded successfully",
+  "fileUploadError": "Failed to upload file",
+  "model": "Model",
+  "temperature": "Temperature",
+  "maxTokens": "Max Tokens",
+  "settings": "Chat Settings",
+  "clearChat": "Clear Chat",
+  "confirmClear": "Are you sure you want to clear this chat?",
+  "messages": {
+    "user": "You",
+    "assistant": "Assistant",
+    "system": "System"
+  }
+}

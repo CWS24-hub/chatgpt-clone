@@ -1,0 +1,38 @@
+{
+  "app": {
+    "name": "ChatGPT Clone",
+    "description": "AI-powered chat application"
+  },
+  "navigation": {
+    "home": "Home",
+    "chat": "Chat",
+    "settings": "Settings",
+    "billing": "Billing"
+  },
+  "buttons": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "open": "Open",
+    "loading": "Loading..."
+  },
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "pending": "Pending",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning"
+  },
+  "language": {
+    "english": "English",
+    "persian": "Persian",
+    "arabic": "Arabic"
+  }
+}

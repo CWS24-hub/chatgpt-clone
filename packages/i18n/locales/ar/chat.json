@@ -1,0 +1,31 @@
+{
+  "newChat": "دردشة جديدة",
+  "chatHistory": "تاريخ الدردشة",
+  "sendMessage": "إرسال رسالة",
+  "typeMessage": "اكتب رسالتك هنا...",
+  "send": "إرسال",
+  "regenerate": "إعادة توليد",
+  "copy": "نسخ",
+  "delete": "حذف",
+  "edit": "تعديل",
+  "share": "مشاركة",
+  "export": "تصدير",
+  "search": "البحث في المحادثات",
+  "noChats": "لا توجد محادثات بعد",
+  "startNewChat": "بدء محادثة جديدة",
+  "uploadFile": "رفع ملف",
+  "attachFile": "إرفاق ملف",
+  "fileUploaded": "تم رفع الملف بنجاح",
+  "fileUploadError": "فشل في رفع الملف",
+  "model": "النموذج",
+  "temperature": "درجة الحرارة",
+  "maxTokens": "الحد الأقصى للرموز",
+  "settings": "إعدادات الدردشة",
+  "clearChat": "مسح الدردشة",
+  "confirmClear": "هل أنت متأكد من أنك تريد مسح هذه الدردشة؟",
+  "messages": {
+    "user": "أنت",
+    "assistant": "المساعد",
+    "system": "النظام"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "subscription": "الاشتراك",
+  "plan": "الخطة",
+  "status": "الحالة",
+  "active": "نشط",
+  "pastDue": "متأخر",
+  "locked": "مقفل",
+  "unpaid": "غير مدفوع",
+  "subscribe": "اشتراك",
+  "renew": "تجديد",
+  "cancel": "إلغاء",
+  "manage": "إدارة الاشتراك",
+  "invoices": "الفواتير",
+  "paymentHistory": "تاريخ المدفوعات",
+  "nextBilling": "الفوترة التالية",
+  "amount": "المبلغ",
+  "currency": "العملة",
+  "paymentMethod": "طريقة الدفع",
+  "billingAddress": "عنوان الفوترة",
+  "checkout": {
+    "title": "أكمل اشتراكك",
+    "subtitle": "اختر خطتك وأكمل الدفع",
+    "monthly": "شهري",
+    "yearly": "سنوي",
+    "selectPlan": "اختر الخطة",
+    "proceedToPayment": "المتابعة للدفع",
+    "terms": "بالاشتراك، أنت توافق على شروط الخدمة وسياسة الخصوصية"
+  },
+  "locked": {
+    "title": "الاشتراك مطلوب",
+    "subtitle": "انتهت صلاحية اشتراكك. يرجى التجديد للمتابعة في استخدام الخدمة.",
+    "daysLeft": "{{count}} أيام متبقية في فترة السماح",
+    "renewNow": "تجديد الآن",
+    "contactSupport": "اتصل بالدعم"
+  },
+  "success": {
+    "title": "تم الدفع بنجاح",
+    "subtitle": "تم تفعيل اشتراكك بنجاح.",
+    "continueToApp": "المتابعة للتطبيق"
+  },
+  "failed": {
+    "title": "فشل الدفع",
+    "subtitle": "كانت هناك مشكلة في معالجة دفعتك. يرجى المحاولة مرة أخرى.",
+    "tryAgain": "حاول مرة أخرى",
+    "contactSupport": "اتصل بالدعم"
+  },
+  "gracePeriod": "فترة السماح",
+  "expired": "منتهي الصلاحية",
+  "renewal": "تجديد"
+}

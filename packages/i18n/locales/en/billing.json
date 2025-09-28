@@ -1,0 +1,50 @@
+{
+  "subscription": "Subscription",
+  "plan": "Plan",
+  "status": "Status",
+  "active": "Active",
+  "pastDue": "Past Due",
+  "locked": "Locked",
+  "unpaid": "Unpaid",
+  "subscribe": "Subscribe",
+  "renew": "Renew",
+  "cancel": "Cancel",
+  "manage": "Manage Subscription",
+  "invoices": "Invoices",
+  "paymentHistory": "Payment History",
+  "nextBilling": "Next Billing",
+  "amount": "Amount",
+  "currency": "Currency",
+  "paymentMethod": "Payment Method",
+  "billingAddress": "Billing Address",
+  "checkout": {
+    "title": "Complete Your Subscription",
+    "subtitle": "Choose your plan and complete payment",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "selectPlan": "Select Plan",
+    "proceedToPayment": "Proceed to Payment",
+    "terms": "By subscribing, you agree to our Terms of Service and Privacy Policy"
+  },
+  "locked": {
+    "title": "Subscription Required",
+    "subtitle": "Your subscription has expired. Please renew to continue using the service.",
+    "daysLeft": "{{count}} days left in grace period",
+    "renewNow": "Renew Now",
+    "contactSupport": "Contact Support"
+  },
+  "success": {
+    "title": "Payment Successful",
+    "subtitle": "Your subscription has been activated successfully.",
+    "continueToApp": "Continue to App"
+  },
+  "failed": {
+    "title": "Payment Failed",
+    "subtitle": "There was an issue processing your payment. Please try again.",
+    "tryAgain": "Try Again",
+    "contactSupport": "Contact Support"
+  },
+  "gracePeriod": "Grace Period",
+  "expired": "Expired",
+  "renewal": "Renewal"
+}

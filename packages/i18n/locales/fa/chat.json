@@ -1,0 +1,31 @@
+{
+  "newChat": "چت جدید",
+  "chatHistory": "تاریخچه چت",
+  "sendMessage": "ارسال پیام",
+  "typeMessage": "پیام خود را اینجا تایپ کنید...",
+  "send": "ارسال",
+  "regenerate": "تولید مجدد",
+  "copy": "کپی",
+  "delete": "حذف",
+  "edit": "ویرایش",
+  "share": "اشتراک‌گذاری",
+  "export": "صادرات",
+  "search": "جستجو در مکالمات",
+  "noChats": "هنوز مکالمه‌ای وجود ندارد",
+  "startNewChat": "شروع مکالمه جدید",
+  "uploadFile": "آپلود فایل",
+  "attachFile": "ضمیمه کردن فایل",
+  "fileUploaded": "فایل با موفقیت آپلود شد",
+  "fileUploadError": "آپلود فایل ناموفق بود",
+  "model": "مدل",
+  "temperature": "دما",
+  "maxTokens": "حداکثر توکن",
+  "settings": "تنظیمات چت",
+  "clearChat": "پاک کردن چت",
+  "confirmClear": "آیا مطمئن هستید که می‌خواهید این چت را پاک کنید؟",
+  "messages": {
+    "user": "شما",
+    "assistant": "دستیار",
+    "system": "سیستم"
+  }
+}
