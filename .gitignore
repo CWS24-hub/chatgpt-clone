@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+apps/web/node_modules/
+apps/mobile/node_modules/
+packages/*/node_modules/
+
+# Build artifacts
+apps/web/.next/
+apps/mobile/.expo/
+.turbo/
+
+# Env files
+*.env.local
+
+# Misc
+pnpm-debug.log*

@@ -34,7 +34,7 @@ model Subscription {
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
   user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  invoices         Invoice[]
+  invoices         Invoice[] @relation("SubscriptionInvoices")
 }
 
 model Invoice {
@@ -48,7 +48,7 @@ model Invoice {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  subscription Subscription? @relation(fields: [userId], references: [userId])
+  subscription Subscription? @relation("SubscriptionInvoices", fields: [userId], references: [userId], map: "Invoice_subscription_userId_fkey")
 }
 
 model Chat {

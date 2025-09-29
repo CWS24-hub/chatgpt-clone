@@ -1,8 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    transpilePackages: ['@workspace/ui', '@workspace/i18n', '@workspace/core', '@workspace/db'],
-  },
+  transpilePackages: ['@workspace/ui', '@workspace/i18n', '@workspace/core', '@workspace/db'],
   images: {
     domains: ['lh3.googleusercontent.com'],
   },
@@ -14,6 +12,22 @@ const nextConfig = {
         permanent: false,
       },
     ];
+  },
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      'react-native$': 'react-native-web',
+      'react-native': 'react-native-web',
+    };
+
+    config.resolve.extensions = [
+      '.web.js',
+      '.web.ts',
+      '.web.tsx',
+      ...config.resolve.extensions,
+    ];
+
+    return config;
   },
 };
 
